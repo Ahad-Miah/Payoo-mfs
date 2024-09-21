@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/7896021e26.js" crossorigin="anonymous"></script>    
 </head>
 <body>
-    <main>
-        Loading.....
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <h1 id="total-balance" class="text-6xl font-bold text-black">4000</h1>
+                <p class="text-gray-500">Available Balance</p>
+
+                    <div class="divider"></div>
+                <div class=" grid grid-cols-3 gap-4">
+                    <button id="add-money" class="btn flex flex-col  border border-gray-300">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        Add money</button>
+                    <button class="btn flex flex-col border border-gray-300">
+                        <i class="fa-solid fa-wallet"></i>
+                        Cash out</button>
+                    <button class="btn border border-gray-300">
+                        <i class="fa-solid fa-wallet"></i>
+                        Transfer money</button>
+                        <button class="btn flex flex-col border border-gray-300">
+                        <i class="fa-solid fa-wallet"></i>
+                     pay bill</button>
+                      <button class="btn flex flex-col border border-gray-300">
+                      <i class="fa-solid fa-wallet"></i>
+                     Get Bonus</button>
+                     <button class="btn flex flex-col border border-gray-300">
+                        <i class="fa-solid fa-wallet"></i>
+                       Transactions</button>
+                </div>
+
+                <!-- Add money Form starts -->
+                <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 hidden">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Enter amount</span>
+                        </label>
+                        <input id="amount" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Enter pin</span>
+                        </label>
+                        <input id="pin" type="password" placeholder="pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-money-btn" class="btn btn-primary">Add money</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Add money form ends -->
+                  <!-- Cash out form starts -->
+                  <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 hidden">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Enter amount</span>
+                        </label>
+                        <input id="amount" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Enter pin</span>
+                        </label>
+                        <input id="pin" type="password" placeholder="pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-money-btn" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Cash out form starts -->
+
+                </div>
+              </div>
+                    
+
+             </div>
+            </div>
+          </div>
     </main>
+    <script src="./js/addmoney.js"></script>
     
 </body>
 </html>
