@@ -28,7 +28,7 @@
                     <button id="add-money" class="btn flex flex-col  border border-gray-300">
                         <i class="fa-solid fa-money-check-dollar"></i>
                         Add money</button>
-                    <button class="btn flex flex-col border border-gray-300">
+                    <button id="cash-out" class="btn flex flex-col border border-gray-300">
                         <i class="fa-solid fa-wallet"></i>
                         Cash out</button>
                     <button class="btn border border-gray-300">
@@ -40,7 +40,7 @@
                       <button class="btn flex flex-col border border-gray-300">
                       <i class="fa-solid fa-wallet"></i>
                      Get Bonus</button>
-                     <button class="btn flex flex-col border border-gray-300">
+                     <button id="transactions" class="btn flex flex-col border border-gray-300">
                         <i class="fa-solid fa-wallet"></i>
                        Transactions</button>
                 </div>
@@ -67,26 +67,34 @@
                   </div>
                   <!-- Add money form ends -->
                   <!-- Cash out form starts -->
-                  <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 hidden">
+                  <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 hidden">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text font-bold">Enter amount</span>
                         </label>
-                        <input id="amount" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+                        <input id="amount-out" type="text" placeholder="Enter your amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text font-bold">Enter pin</span>
                         </label>
-                        <input id="pin" type="password" placeholder="pin" class="input input-bordered" required />
+                        <input id="pin-out" type="password" placeholder="pin" class="input input-bordered" required />
                       </div>
                       <div class="form-control mt-6">
-                        <button id="add-money-btn" class="btn btn-primary">Cash Out</button>
+                        <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
                       </div>
                     </form>
                   </div>
                   <!-- Cash out form starts -->
+
+                  <!-- Transactions starts -->
+                   <div id="transaction-container" class="transictions-container mt-10 hidden">
+                    <h1 class="text-4xl font-bold mb-3">Transactions History</h1>
+                    <P id="transaction-text" class="font-bold text-center">No transactions</P>
+                   </div>
+                   
+                  <!-- Transactions ends-->
 
                 </div>
               </div>
@@ -97,6 +105,8 @@
           </div>
     </main>
     <script src="./js/addmoney.js"></script>
+    <script src="./js/cashout.js"></script>
+    <script src="./js/transactions.js"></script>
     
 </body>
 </html>
